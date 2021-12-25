@@ -26,9 +26,10 @@
 
 /* --------------------- TWAI driver configuration ------------------ */
 // 0x7ff -> all;
-#define PIDS_OR                         (0x349 | 0x3c9)
-// 0x000 -> all;
-#define PIDS_AND                        (0x349 & 0x3c9)
+// #define PIDS_OR                         0x7ff // All
+#define PIDS_OR                         (0x349 | 0x3c9 | 0x208 | 0x488 | 0x38d)
+// #define PIDS_AND                        0x000 // All
+#define PIDS_AND                        (0x349 & 0x3c9 & 0x208 & 0x488 & 0x38d)
 
 static const twai_filter_config_t f_config = {
     .acceptance_code = PIDS_AND << 21,

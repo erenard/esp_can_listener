@@ -1,0 +1,129 @@
+PID 0x3c9: [6] .. .. X. .. .. ..
+X: Transmission Gear
+
+1 -> R 0001
+2 -> N 0010
+4 -> 4 0100
+5 -> 3 0101
+6 -> 2 0110
+7 -> 1 0111
+c -> 6 1010
+e -> 5 1110
+
+PID 0x349: [8] X. YY .. .. .. .. .. ..
+X: START/STOP
+
+3 -> R
+5 -> N
+6 -> A - START
+7 -> A - STOP
+8 -> M - START
+9 -> M - STOP
+
+YY: Torque wanted by the driver (Nm) ? = ((0xYY * 0d2) + 0d100)
+
+SAMPLES :
+
+(004472): 349 52000c2a00006100 			5 = N
+(004472): 3c9 feff20112fff				  2 = Gear N
+(009762): 349 71230c2a0000b204 			7 = A - STOP    1 23 0c 2a 00 00 b2 04
+(009862): 3c9 32ff709c2fff				  7 = Gear 1
+(015102): 349 6c420c710000480e 			6 = A - START   c 42 0c 71 00 00 48 0e
+(018212): 3c9 feff600e2fff          6 = Gear 2
+(029452): 3c9 ddff50022fff          5 = Gear 3
+(036222): 3c9 feff60862fff          6 = Gear 2
+(040292): 349 73210c6200001d07 			7 = A - STOP    3 21 0c 62 00 00 1d 07
+(041542): 3c9 32ff70ba2fff				  7 = Gear 1
+(046792): 349 91210c710000e700 			9 = M - STOP    1 21 0c 71 00 00 e7 00
+(053172): 349 8f4f0c710000751b 			8 = M - START   f 4f 0c 71 00 00 75 1b
+(055602): 3c9 c7ff60082fff          6 = Gear 2
+(070992): 349 92220c620000fa0a 			9 = M - STOP    2 22 0c 62 00 00 fa 0a
+(071882): 3c9 32ff70232fff				  7 = Gear 1
+(074552): 349 8f470c710000be16 			8 = M - START   f 47 0c 71 00 00 be 16
+(077942): 3c9 a9ff60802fff          6 = Gear 2
+(086922): 3c9 feff50d22fff          5 = Gear 3
+(098242): 3c9 feff601d2fff          6 = Gear 2
+(106242): 3c9 87ff70ed2fff				  7 = Gear 1
+(108152): 349 93230c7100008c0d 			9 = M - STOP    3 23 0c 71 00 00 8c 0d
+(126612): 349 8c5b0c710000011c 			8 = M - START   c 5b 0c 71 00 00 01 1c
+(130272): 3c9 feff60ff2fff          6 = Gear 2
+(136472): 3c9 feff504b2fff          5 = Gear 3
+(141102): 3c9 feff40792fff          4 = Gear 4
+(144562): 3c9 feffe0332fff          e = Gear 5
+(149712): 3c9 feffc0262fff          c = Gear 6
+(153852): 3c9 feffe0242fff          e = Gear 5
+(156442): 3c9 feff40972fff          4 = Gear 4
+(158902): 3c9 feff503c2fff          5 = Gear 3
+(164432): 3c9 feff60952fff          6 = Gear 2
+(172002): 3c9 e2ff700a2fff				  7 = Gear 1
+(185442): 349 92230c710000b90e 			9 = M - STOP    2 23 0c 71 00 00 b9 0e
+(188162): 349 71210c710000e900 			7 = A - STOP    1 21 0c 71 00 00 e9 00
+(191552): 349 6c640c710000ac1f 			6 = A - START   c 64 0c 71 00 00 ac 1f
+(192452): 3c9 e8ff60f62fff          6 = Gear 2
+(200372): 349 72230c620000de09 			7 = A - STOP    2 23 0c 62 00 00 de 09
+(201102): 3c9 32ff70f62fff				  7 = Gear 1
+(205842): 349 6f5d0c710000c01e 			6 = A - START   f 5d 0c 71 00 00 c0 1e
+(206822): 3c9 feff60c22fff          6 = Gear 2
+(211582): 3c9 feff501e2fff          5 = Gear 3
+(216862): 3c9 feff402e2fff          4 = Gear 4
+(226132): 3c9 a6ffe07c2fff          e = Gear 5
+(233892): 3c9 deffc0642fff          c = Gear 6
+(274752): 3c9 feffe0e82fff          e = Gear 5
+(279712): 3c9 feff40882fff          4 = Gear 4
+(286682): 3c9 feff50f02fff          5 = Gear 3
+(301352): 3c9 feff406a2fff          4 = Gear 4
+(310452): 3c9 d6ffe0882fff          e = Gear 5
+(324622): 3c9 feffc0802fff          c = Gear 6
+(351612): 3c9 feffe0ca2fff          e = Gear 5
+(371002): 3c9 feff404c2fff          4 = Gear 4
+(397712): 3c9 feff505a2fff          5 = Gear 3
+(401382): 3c9 feff60682fff          6 = Gear 2
+(404382): 349 73220c620000550a 			7 = A - STOP    3 22 0c 62 00 00 55 0a
+(405902): 3c9 32ff709c2fff				  7 = Gear 1
+(419342): 349 6c570c710000bc1c 			6 = A - START   c 57 0c 71 00 00 bc 1c
+(420302): 3c9 efff602c2fff          6 = Gear 2
+(425192): 3c9 feff50b42fff          5 = Gear 3
+(437212): 3c9 feff60862fff          6 = Gear 2
+(446592): 349 73230c6200004f00 			7 = A - STOP    3 23 0c 62 00 00 4f 00
+(448902): 3c9 32ff70f62fff				  7 = Gear 1
+(475722): 349 6c5a0c7100007f1a 			6 = A - START   c 5a 0c 71 00 00 7f 1a
+(476692): 3c9 fdff60f02fff          6 = Gear 2
+(480372): 349 73230c620000900a 			7 = A - STOP    3 23 0c 62 00 00 90 0a
+(481412): 3c9 32ff70d82fff				  7 = Gear 1
+(493202): 349 6c4d0c7100005217 			6 = A - START   c 4d 0c 71 00 00 52 17
+(494742): 3c9 feff602c2fff          6 = Gear 2
+(506962): 349 73310c6200003100 			7 = A - STOP    3 31 0c 62 00 00 31 00
+(508292): 3c9 32ff70f62fff				  7 = Gear 1
+(550932): 349 6c5f0c7100001c1e 			6 = A - START   c 5f 0c 71 00 00 1c 1e
+(551932): 3c9 feff60e02fff          6 = Gear 2
+(558172): 3c9 feff50f02fff          5 = Gear 3
+(598612): 3c9 feff604a2fff          6 = Gear 2
+(600062): 349 73230c620000eb0a 			7 = A - STOP    3 23 0c 62 00 00 eb 0a
+(601132): 3c9 32ff70f62fff				  7 = Gear 1
+(604422): 349 6c4d0c7100008f17 			6 = A - START   c 4d 0c 71 00 00 8f 17
+(606102): 3c9 feff60862fff          6 = Gear 2
+(611302): 3c9 feff501e2fff          5 = Gear 3
+(634892): 3c9 feff60a42fff          6 = Gear 2
+(635022): 349 71240c630000810a 			7 = A - STOP    1 24 0c 63 00 00 81 0a
+(635292): 349 6d32116300002c05 			6 = A - START   d 32 11 63 00 00 2c 05
+(635692): 349 71220c620000d405 			7 = A - STOP    1 22 0c 62 00 00 d4 05
+(635732): 3c9 32ff70d82fff				  7 = Gear 1
+(635742): 349 6537137200006905 			6 = A - START   5 37 13 72 00 00 69 05
+(636402): 349 71220c7100009b02 			7 = A - STOP    1 22 0c 71 00 00 9b 02
+(661502): 349 6c5f0c710000681d 			6 = A - START   c 5f 0c 71 00 00 68 1d
+(662392): 3c9 f0ff60c02fff          6 = Gear 2
+(686942): 3c9 feff50962fff          5 = Gear 3
+(693182): 3c9 feff60862fff          6 = Gear 2
+(694882): 349 73230c620000a009 			7 = A - STOP    3 23 0c 62 00 00 a0 09
+(695942): 3c9 32ff70ba2fff				  7 = Gear 1
+(700202): 349 51220c7100004400 			5 = N 0c 71 00 00 44 00
+(700252): 349 31220c7100001900 			3 = R 0c 71 00 00 19 00
+(700262): 3c9 32ff101a2fff          1 = Gear R
+(704042): 349 51200c1900004400 			5 = N 0c 19 00 00 44 00
+(704152): 349 71210c1900006f00 			7 = A - STOP    1 21 0c 19 00 00 6f 00
+(704262): 3c9 32ff70c92fff				  7 = Gear 1
+(733632): 349 511f0c710000b100 			5 = N 0c 71 00 00 b1 00
+(733752): 349 31200c710000fd00 			3 = R 0c 71 00 00 fd 00
+(733762): 3c9 32ff10de2fff          1 = Gear R
+(763582): 349 51210c1900004300 			5 = N 0c 19 00 00 43 00
+(764102): 3c9 32ff20462fff				  2 = Gear N

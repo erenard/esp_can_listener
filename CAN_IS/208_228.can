@@ -1,0 +1,9 @@
+
+Gaz pedal:
+208 [8] .. .. .. XX .. .. .. .. XX:0x00 -> 0x81
+228 [5] .. .. XX .. ..          XX:0x00 -> 0x41
+
+Driver seatbelt:
+432 [6] .. .. .. .. .. .X        X:A... A: ceinture conducteur
+
+Etudier le 0x488 pour les temperatures

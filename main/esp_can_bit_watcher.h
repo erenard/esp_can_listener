@@ -54,14 +54,24 @@ static void can_listener_task(void *arg)
             twai_message_t rx_msg;
             ESP_ERROR_CHECK(twai_receive(&rx_msg, portMAX_DELAY));
             switch(rx_msg.identifier) {
-                default:
-                    break;
+                // default:
+                //     log_can_event(&rx_msg, 0xffffffffffffffff);
+                //     break;
                 // Watched PIDs & their masks
+                case 0x208:
+                    log_can_event(&rx_msg, 0x000000ff00000000);
+                    break;
                 case 0x349:
-                    log_can_event(&rx_msg, 0xffffffffffff00ff);
+                    log_can_event(&rx_msg, 0xf000000000000000);
+                    break;
+                case 0x38d:
+                    log_can_event(&rx_msg, 0xffff000000000000);
                     break;
                 case 0x3c9:
-                    log_can_event(&rx_msg, 0xffffff00ffffffff);
+                    log_can_event(&rx_msg, 0x0000ff0000000000);
+                    break;
+                case 0x488:
+                    log_can_event(&rx_msg, 0xff00000000ff00ff);
                     break;
             }
         }
